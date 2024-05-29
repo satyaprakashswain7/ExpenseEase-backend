@@ -9,7 +9,8 @@ const app: Express = express()
 const port = process.env.VITE_PORT  || 3000
 
 app.use(cors({
-    origin: '*'
+    origin: '*',
+    methods: "POST",
 }))
 
 app.use(express.json())
