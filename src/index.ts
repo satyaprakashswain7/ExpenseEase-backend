@@ -15,8 +15,8 @@ app.use(cors({
 
 
 
-const mongoURI: string = process.env.VITE_MONGO_URI || ''
-mongoose.connect("mongodb+srv://satyasitu14:mypassword@expenseease.7lwz3h0.mongodb.net/")
+//const mongoURI: string = process.env.VITE_MONGO_URI || ''
+mongoose.connect("mongodb+srv://satyasitu14:mypassword@expenseease.7lwz3h0.mongodb.net/?retryWrites=true&w=majority&appName=ExpenseEase")
 .then(() => console.log("connected to MongoDB succesfully"))
 .catch((err) => console.error("failed ",err))
 
