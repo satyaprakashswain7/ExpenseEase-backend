@@ -8,9 +8,7 @@ require('dotenv').config()
 const app: Express = express()
 const port = process.env.VITE_PORT  || 3000
 
-app.use(cors({
-    origin:"https://expense-ease-backend-cxcy.vercel.app"
-}))
+app.use(cors())
 
 app.use(express.json())
 
