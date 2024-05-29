@@ -8,7 +8,9 @@ require('dotenv').config()
 const app: Express = express()
 const port = process.env.VITE_PORT  || 3000
 
-app.use(cors())
+app.use(cors({
+    origin: 'https://main--expense-ease-tracker-77.netlify.app/'
+}))
 
 app.use(express.json())
 
